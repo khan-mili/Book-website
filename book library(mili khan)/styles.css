@@ -1,0 +1,117 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f9fc;
+    color: #333;
+}
+header {
+    background-color: #4a90e2;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+h1, h2 {
+    margin: 0 0 20px;
+    font-family: 'Segoe UI', sans-serif;
+    color: #4a90e2;
+}
+.book-list, .book-details, .add-book-form {
+    margin-bottom: 20px;
+}
+.book-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+.book-item:last-child {
+    border-bottom: none;
+}
+.book-item span {
+    font-size: 16px;
+    font-weight: 500;
+}
+.book-item button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    background: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+.book-item button:hover {
+    background: #357ABD;
+}
+.add-book-form form {
+    display: flex;
+    flex-direction: column;
+}
+.add-book-form label {
+    margin-top: 10px;
+    font-weight: 600;
+}
+.add-book-form input, .add-book-form textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+.add-book-form button {
+    margin-top: 20px;
+    padding: 10px 15px;
+    background: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    font-size: 16px;
+}
+.add-book-form button:hover {
+    background: #357ABD;
+}
+.book-details {
+    padding: 20px;
+    background-color: #f7f9fc;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+.book-details h3 {
+    margin-top: 0;
+}
+.book-details img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+@media (max-width: 600px) {
+    body {
+        margin: 10px;
+    }
+    main {
+        margin: 10px;
+        padding: 10px;
+    }
+    .book-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .book-item button {
+        margin: 5px 0;
+    }
+}
